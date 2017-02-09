@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="BankFreedom">
+        <class>ua.com.bankfreedom.entity.AccountsEntity</class>
+        <class>ua.com.bankfreedom.entity.ClientsEntity</class>
+        <class>ua.com.bankfreedom.entity.CurrencyratesEntity</class>
+        <class>ua.com.bankfreedom.entity.LoginEntity</class>
+        <class>ua.com.bankfreedom.entity.PasswordEntity</class>
+        <class>ua.com.bankfreedom.entity.TransactionsEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/bankfreedom"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value=""/>
+        </properties>
+    </persistence-unit>
+</persistence>
